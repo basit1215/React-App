@@ -7,12 +7,16 @@ import Footer from './Footer';
 
 function App() {
   const [data, setData] = useState(20);
+
+  function addCounter(){
+    setData(data + 1)
+  }
   return (
     <>
       <NavBar/>
-      <h1>Hello World! {data}</h1>
+      <h1 className=''>Hello World! {data}</h1>
       <div>
-        <Button name="Submit" age={20} arr={["Apple", "Mango", "Banana"]} />
+        <Button  name="Submit" age={20} arr={["Apple", "Mango", "Banana"]} func={addCounter} />
         <Button name="Click"  age={22} arr={["Banana", "Mango", "Apple"]} />
         <Button name="Add Me"  age={24} arr={[ "Mango", "Banana"]} />
         <Button name="Subscribe"  age={26} arr={["Apple", "Mango"]} />
