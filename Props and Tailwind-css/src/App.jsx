@@ -4,10 +4,11 @@ import './App.css'
 import Button from './Button';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import Video from './Video';
 
 function App() {
   const [data, setData] = useState(20);
-
+ 
   function addCounter(){
     setData(data + 1)
   }
@@ -21,7 +22,8 @@ function App() {
         <Button name="Add Me"  age={24} arr={[ "Mango", "Banana"]} />
         <Button name="Subscribe"  age={26} arr={["Apple", "Mango"]} />
         <Button  name="Read More"  age={28} arr={["Apple", "Banana"]} />
-        <Footer />
+        <Video />
+         <Footer />
       </div>
     </>
   )
