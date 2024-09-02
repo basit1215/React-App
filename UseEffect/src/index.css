@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+div{
+    margin: 10px 200px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 42px;
+}
+
+p{
+    text-align: center;
+}
