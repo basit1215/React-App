@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     console.log("Effect running...")
-  }, [lessCounter])
+  })
 
 
   function addCounter() {
